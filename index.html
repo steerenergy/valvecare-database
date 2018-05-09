@@ -25,7 +25,7 @@
     <div class="card">
       <h5 class="card-header">Form</h5>
       <form class="p-3">
-        <div class="form-row">
+        <div class="form-row align-items-center">
           <div class="form-group col-md-6">
             <label for="valveTagNo">Valve Tag Number</label>
             <input type="text" class="form-control" id="valveTagNo"></input>
@@ -39,7 +39,7 @@
             <input type="text" class="form-control" id="valveLoc"></input>
           </div>
         </div>
-        <div class="form-row">
+        <div class="form-row align-items-center">
           <div class="form-group col-md-6">
             <label for="valveFunc">Valve Function</label>
             <input type="text" class="form-control" id="valveFunc"></input>
@@ -49,10 +49,12 @@
             <input type="text" class="form-control" id="valveConditon"></input>
           </div>
         </div>
-        <div class="form-row">
-          <div class="form-group col-md-4">
-            <label for="valveVentPort">Vent Port Present?</label>
-            <input type="text" class="form-control" id="valveVentPort"></input>
+        <div class="form-row align-items-center">
+          <div class="col-md-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="valveVentPort"></input>
+              <label class="custom-control-label" for="valveVentPort">Vent Port Present?</label>
+            </div>
           </div>
           <div class="form-group col-md-4">
             <label for="valveVentCondition">Valve Vent Port Condition</label>
@@ -63,7 +65,7 @@
             <input type="number" class="form-control" id="valveVentSize"></input>
           </div>
         </div>
-        <div class="form-row">
+        <div class="form-row align-items-center">
           <div class="form-group col-md-4">
             <label for="valveTorqueCirc">External Circumference of Torque Tube</label>
             <input type="number" class="form-control" id="valveTorqueCirc"></input>
@@ -77,7 +79,13 @@
             <input type="number" class="form-control" id="valveAnDepth"></input>
           </div>
         </div>
-        <div class="form-row">
+        <div class="form-row align-items-center">
+          <div class="col-md-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="valveWaterSample"></input>
+              <label class="custom-control-label" for="valveWaterSample">Sample of Water Taken</label>
+            </div>
+          </div>
           <div class="form-group col-md-4">
             <label for="valveWater">Water Present in Torque Tube</label>
             <input type="number" class="form-control" id="valveWater"></input>
@@ -86,12 +94,8 @@
             <label for="valveWaterDepth">Depth of Water</label>
             <input type="number" class="form-control" id="valveWaterDepth"></input>
           </div>
-          <div class="form-group col-md-4">
-            <label for="valveWaterSample">Sample of Water Taken</label>
-            <input type="text" class="form-control" id="valveWaterSample"></input>
-          </div>
         </div>
-        <div class="form-row">
+        <div class="form-row align-items-center">
           <div class="form-group col-md-6">
             <label for="valveTorqueDebris">Debris in Torque Tube</label>
             <input type="text" class="form-control" id="valveTorqueDebris"></input>
@@ -101,14 +105,18 @@
             <input type="text" class="form-control" id="valveDebrisSample"></input>
           </div>
         </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="valveMechDebris">Debris in the Mechanism?</label>
-            <input type="text" class="form-control" id="valveMechDebris"></input>
+        <div class="form-row align-items-center">
+          <div class="col-md-6">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="valveMechDebris"></input>
+              <label class="custom-control-label" for="valveMechDebris">Debris in the Mechanism?</label>
+            </div>
           </div>
-          <div class="form-group col-md-6">
-            <label for="valveOperateRotation">Valve Operate Correctly (Less than 90° Rotation)</label>
-            <input type="text" class="form-control" id="valveOperateRotation"></input>
+          <div class="col-md-6">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="valveOperateRotation"></input>
+              <label class="custom-control-label" for="valveOperateRotation">Valve Operate Correctly (Less than 90° Rotation)</label>
+            </div>
           </div>
         </div>
         <hr />
